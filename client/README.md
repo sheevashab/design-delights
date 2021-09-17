@@ -6,11 +6,13 @@ Design Delights emulates an interactive design blog. I will use Airtable to make
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+Mobile and Desktop Views
+
+![mobile view wireframe](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1631901757/Wireframe_ard6mh.png)
 
 ## Component Hierarchy
 
-Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
+ ![component hierarchy](https://res.cloudinary.com/dyyjvyqtn/image/upload/v1631901960/Component_Hierarchy_wqqweo.png)
 
 ## API and Data Sample
 
