@@ -58,8 +58,8 @@ My project 2 PostMVPs are:
 |  Day | Deliverable | Status
 |---|---| ---|
 |Sept 16| Wireframe Approval | Complete
-|Sept 17| Component Hirearchy Approval / README | Incomplete
-|Sept 18| React application - code app.js layout (aka home page) with all supplemental jsx component files linked | Incomplete
+|Sept 17| Component Hirearchy Approval / README | Complete
+|Sept 18| React application - code app.js layout (aka home page) / NavBar. Create framework for all supplemental jsx component files | Incomplete
 |Sept 19| React application - code e-mail submit form component and ArtList component | Incomplete
 |Sept 20| React application - code ArtPost form and delete button | Incomplete
 |Sept 21| Styling application | Incomplete
@@ -71,10 +71,23 @@ My project 2 PostMVPs are:
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Creating wireframes + component hierarchy on Whimsical | H | 2hrs| 3hrs | 3hrs |
+| Proposal - creating wireframes + component hierarchy on Whimsical | H | 2hrs| 3hrs | 3hrs |
 | Working with Airtable API | H | 1hrs| 1hrs | 1hrs |
-
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
+| Setting up deployment and README | H | 4hrs| 5hrs | 5hrs |
+| Code for App.js home page route layout / create jsx files for components | H | 3hrs| hrs | hrs |
+| Code NavBar component | H | 3hrs| hrs | hrs |
+| Code e-mail submit component | H | 3hrs| hrs | hrs |
+| Code ArtList component (axios get request) | H | 3hrs| hrs | hrs |
+| Code ArtPost component (axios post request) | H | 3hrs| hrs | hrs |
+| Code ArtDelete component (axios delete request) | H | 3hrs| hrs | hrs |
+| Style home page for mobile | H | 3hrs| hrs | hrs |
+| Style Art page | H | 3hrs| hrs | hrs |
+| Style forms | M | 3hrs| hrs | hrs |
+| Style buttons | M | 2hrs| hrs | hrs |
+| Implement and style media query | H | 3hrs| hrs | hrs |
+| Post MVP - Fashion Link (Airtable,List,Post,Delete) | L | 7hrs| hrs | hrs |
+| Post MVP - Interiors Link (Airtable,List,Post,Delete) | L | 7hrs| hrs | hrs |
+| Post MVP - Architecture Link (Airtable,List,Post,Delete) | L | 7hrs| hrs | hrs |
 | Total |  | hrs| hrs | hrs |
 
 ## SWOT Analysis
