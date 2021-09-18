@@ -15,7 +15,7 @@ function App() {
 
       <Route exact path="/art">
         <ArtList />
-        <div clasName="Links">Art</div>
+        <div clasName="Links"></div>
       </Route>
 
       <Route exact path="/art/:id">

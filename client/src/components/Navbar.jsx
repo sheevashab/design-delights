@@ -5,9 +5,14 @@ export default function Navbar() {
   return (
     <div className="Navbar">
       <div className="Logo">
-        <h1>Design Delights</h1>
+        <Link to="/"><h1>Design Delights</h1></Link>
       </div>
       <div className="Links">
+        <ul>
+          <li>
+            <Link to="/art">Art</Link>
+          </li>
+        </ul>
       </div>
     </div>
   )
