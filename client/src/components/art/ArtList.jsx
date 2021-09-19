@@ -38,6 +38,7 @@ export default function ArtList() {
         {art.map(arts => {
           return (
             <Link to={`/art/${art.id}`} key={art.id}>
+              <img className="image" src={arts.fields.image} alt="artwork image" />
               <h4>{arts.fields.title}</h4>
               <h4>{arts.fields.artist}</h4>
               <h4>{arts.fields.origin}</h4>
