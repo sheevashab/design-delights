@@ -34,6 +34,7 @@ export default function ArtDetail() {
         const res = await axios.get(`${URL}/${id}`, config);
         console.log(res.data);
         setArt(res.data);
+        setLoading(false);
       } catch (error) {
         console.log(error);
       }
