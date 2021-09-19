@@ -49,6 +49,7 @@ export default function ArtDetail() {
 
   return (
     <div>
+      <img className="image" src={art.fields?.image} alt="artwork" />
       <h3>Title:</h3>
       <h4>{art.fields?.title}</h4>
       <h3>Artist:</h3>

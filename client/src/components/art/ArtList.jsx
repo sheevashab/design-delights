@@ -39,7 +39,7 @@ export default function ArtList() {
           return (
             <div key={index}>
               <Link to={`/art/${pieces.id}`} key={pieces.id}>
-                <img className="image" src={pieces.fields.image} alt="artwork image" />
+                <img className="thumbnailImage" src={pieces.fields.image} alt="artwork thumbnail" />
               </Link>
               <h4>{pieces.fields.title}</h4>
               <h4>{pieces.fields.artist}</h4>
