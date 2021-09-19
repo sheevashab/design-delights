@@ -39,6 +39,11 @@ export default function ArtList() {
           return (
             <Link to={`/art/${art.id}`} key={art.id}>
               <h4>{arts.fields.title}</h4>
+              <h4>{arts.fields.artist}</h4>
+              <h4>{arts.fields.origin}</h4>
+              <h4>{arts.fields.year}</h4>
+              <h4>{arts.fields.medium}</h4>
+              <h4>{arts.fields.size}</h4>
             </Link>
           );
         })}

@@ -5,7 +5,6 @@ import ArtDetail from "./components/art/ArtDetail";
 import ArtPost from "./components/art/ArtPost";
 import { Route } from "react-router-dom";
 
-
 function App() {
   return (
     <div className="App">
