@@ -22,7 +22,7 @@ export default function ArtList() {
     const fetchArt = async () => {
       const res = await axios.get(URL, config);
       setArt(res.data.records);
-      console.log(setArt);
+      console.log(res.data.records);
       setLoading(false);
     };
     fetchArt();
@@ -35,20 +35,23 @@ export default function ArtList() {
   return (
     <div>
       <div className="Arttags">
-        {art.map(arts => {
+        {art.map((pieces, index) => {
           return (
-            <Link to={`/art/${art.id}`} key={art.id}>
-              <img className="image" src={arts.fields.image} alt="artwork image" />
-              <h4>{arts.fields.title}</h4>
-              <h4>{arts.fields.artist}</h4>
-              <h4>{arts.fields.origin}</h4>
-              <h4>{arts.fields.year}</h4>
-              <h4>{arts.fields.medium}</h4>
-              <h4>{arts.fields.size}</h4>
-            </Link>
+            <div key={index}>
+              <Link to={`/art/${pieces.id}`} key={pieces.id}>
+                <img className="image" src={pieces.fields.image} alt="artwork image" />
+              </Link>
+              <h4>{pieces.fields.title}</h4>
+              <h4>{pieces.fields.artist}</h4>
+              <h4>{pieces.fields.origin}</h4>
+              <h4>{pieces.fields.year}</h4>
+              <h4>{pieces.fields.medium}</h4>
+              <h4>{pieces.fields.size}</h4>
+            </div>
           );
         })}
       </div>
+      <Link to='/new'>Add New Art</Link>
     </div>
   );
 }

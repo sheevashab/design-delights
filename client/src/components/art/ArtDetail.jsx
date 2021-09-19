@@ -40,6 +40,7 @@ export default function ArtDetail() {
       }
     }
     fetchArt();
+    // eslint-disable-next-line
   }, [])
 
   if (loading) {
@@ -60,7 +61,7 @@ export default function ArtDetail() {
       <h4>{art.fields?.medium}</h4>
       <h3>Size:</h3>
       <h4>{art.fields?.size}</h4>
-      <Link to={`/recipes/${art.id}/`}></Link>
+      <Link to={`/art/${id}/`}></Link>
     </div>
   )
 }
