@@ -35,10 +35,10 @@ export default function ArtList() {
   return (
     <div>
       <div className="Arttags">
-        {art.map(pieces => {
+        {art.map(arts => {
           return (
             <Link to={`/art/${art.id}`} key={art.id}>
-              <h4>{pieces.fields.title}</h4>
+              <h4>{arts.fields.title}</h4>
             </Link>
           );
         })}
