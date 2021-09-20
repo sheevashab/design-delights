@@ -34,19 +34,21 @@ export default function ArtList() {
 
   return (
     <div>
-      <div className="Arttags">
+      <div className="flex-col items-center justify-center mt-8 text-center">
         {art.map((pieces, index) => {
           return (
             <div key={index}>
               <Link to={`/art/${pieces.id}`} key={pieces.id}>
-                <img className="thumbnailImage" src={pieces.fields.image} alt="artwork thumbnail" />
+                <img className="flex items-center justify-center w-3/4 rounded-full" src={pieces.fields.image} alt="artwork thumbnail" />
               </Link>
-              <h4>{pieces.fields.title}</h4>
-              <h4>{pieces.fields.artist}</h4>
-              <h4>{pieces.fields.origin}</h4>
-              <h4>{pieces.fields.year}</h4>
-              <h4>{pieces.fields.medium}</h4>
-              <h4>{pieces.fields.size}</h4>
+              <div className="flex-row-wrap">
+                <h3 className="font-semibold">{pieces.fields.title}</h3>
+                <h4>{pieces.fields.artist}</h4>
+                <h4>{pieces.fields.origin}</h4>
+                <h4>{pieces.fields.year}</h4>
+                <h4>{pieces.fields.medium}</h4>
+                <h4>{pieces.fields.size}</h4>
+              </div>
             </div>
           );
         })}
