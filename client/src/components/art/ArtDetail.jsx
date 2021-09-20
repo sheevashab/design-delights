@@ -1,5 +1,6 @@
 import axios from "axios";
 import React from "react";
+import Delete from "./Delete"
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
@@ -63,6 +64,7 @@ export default function ArtDetail() {
       <h3>Size:</h3>
       <h4>{art.fields?.size}</h4>
       <Link to={`/art/${id}/`}></Link>
+      <Delete id={id} />
     </div>
   )
 }

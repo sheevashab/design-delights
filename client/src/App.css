@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  background-color: #96CCFF;
+  color: #FFFCEB;
+  text-decoration: none;
 }
 
 .thumbnailImage {
@@ -10,4 +13,9 @@
 .image {
   height: 300px;
   width: auto;
+}
+
+@media screen and (min-width: 480px) {
+
+  
 }
