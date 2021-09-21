@@ -20,15 +20,6 @@ export default function ArtDetail() {
   const [loading, setLoading] = useState(true);
   const { id } = useParams();
 
-  // useEffect(() => {
-  //   const fetchArt = async () => {
-  //     const res = await axios.get(`${URL}/${id}`, config);
-  //     setArt(res.data);
-  //     console.log(setArt);
-  //     setLoading(false);
-  //   };
-  //   fetchArt();
-  // }, []);
   useEffect(() => {
     async function fetchArt() {
       try {
