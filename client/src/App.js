@@ -8,7 +8,7 @@ import { Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="bg-red-50 h-screen">
+    <div className="bg-soft-orange h-screen">
       <Navbar />
 
       <Route exact path="/">
@@ -16,7 +16,7 @@ function App() {
         <p className="mt-8 text-center text-xl text-gray-700 font-semibold">
           Welcome to Design Delights!</p>
         <p className="mt-4 ml-8 mr-8 text-center text-l text-gray-700 font-light leading-relaxed">
-          This is an interactive blog where you, the user, can stop by to gain a little inspo or to give a little inspo. </p>
+          Our interactive blog allows you, the user, a platform to gain a little inspo or to give a little inspo. </p>
         <div className="mt-8 text-center">
           <EmailSubmit />
         </div>

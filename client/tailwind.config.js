@@ -3,7 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-
+      colors: {
+        "soft-orange": "#DB682D",
+      }
     },
   },
   variants: {

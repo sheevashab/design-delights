@@ -29,19 +29,23 @@ export default function ArtList() {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>
+    return <button type="button" className="bg-rose-600 ..." >
+      <svg className="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24">
+      </svg>
+      Loading
+    </button>
   }
 
   return (
     <div>
-      <div className="flex-col items-center justify-center mt-8 text-center">
+      <div className="bg-red-50">
         {art.map((pieces, index) => {
           return (
-            <div key={index}>
+            <div className="flex flex-col place-items-center text-center" key={index}>
               <Link to={`/art/${pieces.id}`} key={pieces.id}>
-                <img className="flex items-center justify-center w-3/4 rounded-full" src={pieces.fields.image} alt="artwork thumbnail" />
+                <img className="place-content-center h-48 mt-6 rounded-3xl" src={pieces.fields.image} alt="artwork thumbnail" />
               </Link>
-              <div className="flex-row-wrap">
+              <div>
                 <h3 className="font-semibold">{pieces.fields.title}</h3>
                 <h4>{pieces.fields.artist}</h4>
                 <h4>{pieces.fields.origin}</h4>
