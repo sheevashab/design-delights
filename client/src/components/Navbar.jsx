@@ -12,7 +12,7 @@ export default function Navbar() {
         </Link>
       </div>
       <div
-        className="mr-4 text-blue-200 text-l text-right font-medium pt-4 pb-4 leading-relaxed align-middle lg:text-2xl lg:font-light">
+        className="mr-4 text-medium-blue text-l text-right font-medium pt-4 pb-4 leading-relaxed align-middle lg:text-2xl lg:font-light">
         <ul>
           <li>
             <Link

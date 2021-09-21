@@ -38,7 +38,7 @@ export default function ArtList() {
 
   return (
     <div>
-      <div className="bg-red-50">
+      <div className="bg-soft-orange">
         {art.map((pieces, index) => {
           return (
             <div className="flex flex-col place-items-center text-center" key={index}>
@@ -57,7 +57,10 @@ export default function ArtList() {
           );
         })}
       </div>
-      <Link to='/new'>Add New Art</Link>
+      <Link to='/new'>
+        <button className="flex-shrink-0 bg-medium-blue text-yellow-50 hover:bg-blue-300 border-blue-200 text-md font-semibold border-2 mt-2 py-1 px-2 rounded-full">
+          Add</button>
+      </Link>
     </div>
   );
 }
