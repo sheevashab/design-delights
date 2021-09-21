@@ -24,6 +24,18 @@ export default function Delete(props) {
 
   return (
     <div key={props.id}>
+
+      {/* if (props.id === rec7RJwKVZvmFPkzY) {
+
+      }else if (props.id === rec9OKf4ExE4HUlO5) {
+
+      }else if (props.id === recKgfuYG15nxsxkZ){
+
+      }else if (props.id === recoJyNgJwKb61mBl){
+      
+      }
+      else{ } */}
+
       <button onClick={handleDelete}>Delete</button>
     </div>
   )
