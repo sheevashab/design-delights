@@ -43,18 +43,17 @@ export default function ArtList() {
           return (
             <div className="flex flex-col place-items-center text-center" key={index}>
               <Link to={`/art/${pieces.id}`} key={pieces.id}>
-                <img className="place-content-center w-48 mt-6 rounded-3xl border-4 border-medium-orange" src={pieces.fields.image} alt="artwork thumbnail" />
+                <img className="place-content-center w-48 mt-8 rounded-3xl border-4 border-medium-orange" src={pieces.fields.image} alt="artwork thumbnail" />
               </Link>
-              <div className="text-gray-700 font-normal mt-2 leading-snug">
+              <Link to={`/art/${pieces.id}`} key={pieces.id}>
+                <button className="font-semibold text-lg border-2 border-medium-orange rounded-3xl px-2 m-2 mt-4">{pieces.fields.title}</button>
+              </Link>
+              <div className="text-gray-700 font-normal leading-snug">
                 <h4>{pieces.fields.artist}</h4>
                 <h4>{pieces.fields.origin}</h4>
                 <h4>{pieces.fields.year}</h4>
-                <h4>{pieces.fields.size}</h4>
-                <h4>{pieces.fields.medium}</h4>
-                <button>
-                  <h3 className="font-semibold text-lg border-2 border-medium-orange rounded-3xl px-2 m-2">{pieces.fields.title}</h3>
-                  <Link to={`/art/${pieces.id}`} key={pieces.id}></Link>
-                </button>
+
+
               </div>
             </div>
           );
