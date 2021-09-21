@@ -43,7 +43,7 @@ export default function ArtList() {
           return (
             <div className="flex flex-col place-items-center text-center" key={index}>
               <Link to={`/art/${pieces.id}`} key={pieces.id}>
-                <img className="place-content-center h-48 mt-6 rounded-3xl border-4 border-medium-orange" src={pieces.fields.image} alt="artwork thumbnail" />
+                <img className="place-content-center w-48 mt-6 rounded-3xl border-4 border-medium-orange" src={pieces.fields.image} alt="artwork thumbnail" />
               </Link>
               <div className="text-gray-700 font-normal mt-2 leading-snug">
                 <h4>{pieces.fields.artist}</h4>
@@ -61,8 +61,8 @@ export default function ArtList() {
         })}
       </div>
       <Link to='/new'>
-        <button className="font-mono flex flex-row justify-content-center text-2xl font-bold bg-medium-blue text-yellow-50 hover:bg-blue-300 border-blue-200 text-md border-2 mt-4 py-1 px-4 rounded-full">
-          Add</button>
+        <button className="place-content-center font-mono text-lg tracking-wide font-light bg-medium-blue text-yellow-50 hover:bg-blue-300 border-blue-200 text-md border-2 mt-4 py-1 px-4 rounded-full">
+          Add<br />Thoughtfully</button>
       </Link>
     </div>
   );

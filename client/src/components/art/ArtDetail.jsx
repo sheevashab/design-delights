@@ -48,17 +48,17 @@ export default function ArtDetail() {
       <img className="w-screen" src={art.fields?.image} alt="artwork" />
       <div className="grid grid-cols-2">
         <h3 className="mt-6 ml-6 text-xl font-semibold">Title</h3>
-        <h4 className="mt-6 text-lg font-light">{art.fields?.title}</h4>
+        <h4 className="mt-6 mr-6 text-lg font-light">{art.fields?.title}</h4>
         <h3 className="mt-4 ml-6 text-xl font-semibold">Artist</h3>
-        <h4 className="mt-4 text-lg font-light">{art.fields?.artist}</h4>
+        <h4 className="mt-4 mr-6 text-lg font-light">{art.fields?.artist}</h4>
         <h3 className="mt-4 ml-6 text-xl font-semibold">Origin</h3>
-        <h4 className="mt-4 text-lg font-light">{art.fields?.origin}</h4>
+        <h4 className="mt-4 mr-6 text-lg font-light">{art.fields?.origin}</h4>
         <h3 className="mt-4 ml-6 text-xl font-semibold">Year</h3>
-        <h4 className="mt-4 text-lg font-light">{art.fields?.year}</h4>
+        <h4 className="mt-4 mr-6 text-lg font-light">{art.fields?.year}</h4>
         <h3 className="mt-4 ml-6 text-xl font-semibold">Size</h3>
-        <h4 className="mt-4 text-lg font-light">{art.fields?.size}</h4>
+        <h4 className="mt-4 mr-6 text-lg font-light">{art.fields?.size}</h4>
         <h3 className="mt-4 ml-6 text-xl font-semibold">Medium</h3>
-        <h4 className="mt-4 text-lg font-light">{art.fields?.medium}</h4>
+        <h4 className="mt-4 mb-6 mr-6 text-lg font-light">{art.fields?.medium}</h4>
 
       </div>
       <Link to={`/art/${id}/`}></Link>
