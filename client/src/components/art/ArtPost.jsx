@@ -36,7 +36,7 @@ export default function ArtPost() {
       image,
     };
     const res = await axios.post(URL, { fields }, config);
-    history.push(`/art/${res.data.id}`);
+    history.push(`/art`);
     console.log(res.data);
   };
 
