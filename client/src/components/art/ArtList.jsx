@@ -38,27 +38,30 @@ export default function ArtList() {
 
   return (
     <div>
-      <div className="bg-soft-orange">
+      <div>
         {art.map((pieces, index) => {
           return (
             <div className="flex flex-col place-items-center text-center" key={index}>
               <Link to={`/art/${pieces.id}`} key={pieces.id}>
-                <img className="place-content-center h-48 mt-6 rounded-3xl" src={pieces.fields.image} alt="artwork thumbnail" />
+                <img className="place-content-center h-48 mt-6 rounded-3xl border-4 border-medium-orange" src={pieces.fields.image} alt="artwork thumbnail" />
               </Link>
-              <div>
-                <h3 className="font-semibold">{pieces.fields.title}</h3>
+              <div className="text-gray-700 font-normal mt-2 leading-snug">
                 <h4>{pieces.fields.artist}</h4>
                 <h4>{pieces.fields.origin}</h4>
                 <h4>{pieces.fields.year}</h4>
-                <h4>{pieces.fields.medium}</h4>
                 <h4>{pieces.fields.size}</h4>
+                <h4>{pieces.fields.medium}</h4>
+                <button>
+                  <h3 className="font-semibold text-lg border-2 border-medium-orange rounded-3xl px-2 m-2">{pieces.fields.title}</h3>
+                  <Link to={`/art/${pieces.id}`} key={pieces.id}></Link>
+                </button>
               </div>
             </div>
           );
         })}
       </div>
       <Link to='/new'>
-        <button className="flex-shrink-0 bg-medium-blue text-yellow-50 hover:bg-blue-300 border-blue-200 text-md font-semibold border-2 mt-2 py-1 px-2 rounded-full">
+        <button className="font-mono flex flex-row justify-content-center text-2xl font-bold bg-medium-blue text-yellow-50 hover:bg-blue-300 border-blue-200 text-md border-2 mt-4 py-1 px-4 rounded-full">
           Add</button>
       </Link>
     </div>

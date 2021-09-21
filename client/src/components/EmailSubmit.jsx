@@ -18,7 +18,7 @@ export default function EmailSubmit() {
         type="text"
         // value={email}
         placeholder="your e-mail" />
-      <button className="flex-shrink-0 bg-medium-blue text-yellow-50 hover:bg-blue-300 border-blue-200 text-md font-semibold border-2 mt-2 py-1 px-2 rounded-full">
+      <button className="flex-shrink-0 bg-medium-blue text-yellow-50 hover:bg-blue-300 border-blue-200 text-md font-semibold border-2 mt-2 py-1 px-2 rounded-full font-mono">
         Subscribe</button>
     </form>
   )

@@ -8,7 +8,7 @@ import { Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="bg-soft-orange h-screen">
+    <div className="bg-yellow-50 h-screen">
       <Navbar />
 
       <Route exact path="/">
