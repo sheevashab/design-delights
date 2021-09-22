@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "@craco/craco": "^6.3.0",
-    "daisyui": "^1.14.0"
+    "daisyui": "^1.14.0",
+    "react-icons": "^4.2.0"
   }
 }

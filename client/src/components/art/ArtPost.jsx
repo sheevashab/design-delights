@@ -42,7 +42,6 @@ export default function ArtPost() {
 
   return (
     <div className="AddForm">
-      <h2>What brings you delight?</h2>
       <Form
         title={title}
         setTitle={setTitle}

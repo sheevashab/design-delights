@@ -11,8 +11,16 @@
 
 .open{
   transform: translateY(100px);
+  width: 25%;
+  height: 25%;
+  background-color: orangered;
+  z-index: 3;
+  display:flex;
+  flex-flow: column;
+  justify-content: space-evenly;
 }
 
 .navbar{
 z-index: 2;
 }
+
