@@ -8,7 +8,7 @@ import { Route } from "react-router-dom";
 
 function App() {
   return (
-    <div>
+    <div className="h-screen w-full overflow-auto">
 
       <Navbar />
 

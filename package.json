@@ -5,6 +5,7 @@
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.14"
   },
   "dependencies": {
-    "@craco/craco": "^6.3.0"
+    "@craco/craco": "^6.3.0",
+    "daisyui": "^1.14.0"
   }
 }

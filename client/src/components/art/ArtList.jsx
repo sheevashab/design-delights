@@ -30,15 +30,13 @@ export default function ArtList() {
   }, []);
 
   if (loading) {
-    return <button type="button" className="bg-rose-600 ..." >
-      <svg className="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24">
-      </svg>
-      Loading
-    </button>
+    return (
+      <button class="container btn btn-med btn-ghost loading mx-auto flex flex-row justify-center">loading</button>
+    )
   }
 
   return (
-    <div>
+    <div className="h-screen w-full overflow-auto">
       <div>
         {art.map((pieces, index) => {
           return (
@@ -60,11 +58,8 @@ export default function ArtList() {
           );
         })}
       </div>
-
-      <Delete />
-
       <Link to='/new'>
-        <button className="bg-blue-300 text-yellow-50 hover:bg-blue-200 border-blue-100 text-sm font-light border-2 mt-2 py-1 px-3 rounded-full font-mono">
+        <button className="container flex flex-row justify-center bg-blue-300 text-yellow-50 hover:bg-blue-200 border-blue-100 text-sm font-light border-2 mt-2 py-2 px-3 font-mono">
           Add<br />Thoughtfully</button>
       </Link>
     </div>
