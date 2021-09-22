@@ -4,56 +4,68 @@ export default function Form(props) {
   return (
     <div className="form-control">
       <form className="flex flex-col mx-auto mt-6 w-56" onSubmit={props.handleSubmit}>
-        <h1 className="text-2xl text-center font-semibold">What brings you delight?</h1>
-        <label className="label">
-          <span className="label-text">Title</span>
-        </label>
+        <h1 className="text-gray-700 text-2xl text-center font-normal leading-relaxed">Add Your Delights:</h1>
+        <label className="label mt-4">
+          <span className="label-text text-base text-gray-700">Title</span></label>
         <input
           className="input input-bordered border-2 border-soft-orange"
-          placeholder="title"
           type="text"
           value={props.title}
           onChange={(e) => props.setTitle(e.target.value)}
         />
         <br />
-        <label className="mt-6 ml-6 text-xl font-semibold">Artist</label>
+        <label className="label">
+          <span className="label-text text-base text-gray-700">Artist</span></label>
         <input
+          className="input input-bordered border-2 border-soft-orange"
           type="text"
           value={props.artist}
           onChange={(e) => props.setArtist(e.target.value)}
         />
         <br />
-        <label className="mt-6 ml-6 text-xl font-semibold">Origin</label>
+        <label className="label">
+          <span className="label-text text-base text-gray-700">Origin</span></label>
         <input
+          className="input input-bordered border-2 border-soft-orange"
           type="text"
           value={props.origin}
           onChange={(e) => props.setOrigin(e.target.value)}
         />
         <br />
-        <label className="mt-6 ml-6 text-xl font-semibold">Year</label>
+        <label className="label">
+          <span className="label-text text-base text-gray-700">Year</span></label>
         <input
+          className="input input-bordered border-2 border-soft-orange"
           type="text"
           value={props.year}
           onChange={(e) => props.setYear(e.target.value)}
         />
         <br />
-        <label className="mt-6 ml-6 text-xl font-semibold">Medium</label>
+        <label className="label">
+          <span className="label-text text-base text-gray-700">Size</span>
+        </label>
         <input
-          type="text"
-          value={props.medium}
-          onChange={(e) => props.setMedium(e.target.value)}
-        />
-        <br />
-        <label className="mt-6 ml-6 text-xl font-semibold">Size</label>
-        <input
+          className="input input-bordered border-2 border-soft-orange"
           type="text"
           value={props.size}
           onChange={(e) => props.setSize(e.target.value)}
         />
         <br />
-        <label className="mt-6 ml-6 text-xl font-semibold">Image</label>
+        <label className="label">
+          <span className="label-text text-base text-gray-700">Medium</span></label>
+        <input
+          className="input input-bordered border-2 border-soft-orange"
+          type="text"
+          value={props.medium}
+          onChange={(e) => props.setMedium(e.target.value)}
+        />
+        <br />
+        <label className="label">
+          <span className="label-text text-base text-gray-700">Image</span>
+        </label>
         <input
           type="text"
+          className="input input-bordered border-2 border-soft-orange"
           value={props.image}
           onChange={(e) => props.setImage(e.target.value)}
         />

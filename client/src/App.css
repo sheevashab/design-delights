@@ -9,7 +9,7 @@
 .open{
   transform: translateY(100px);
   width: 33%;
-  height: 25%;
+  height: auto;
   background-color: #ffe39f;
   z-index: 3;
   display:flex;
@@ -19,7 +19,7 @@
   border-radius: 10px;
   margin-top: 2rem;
   margin-right: 1rem;
-  padding-top: 0;
+  padding: 1rem;
   color: #374151;
   font-weight: bold;
 }

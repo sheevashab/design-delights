@@ -37,7 +37,7 @@ export default function ArtDetail() {
 
   if (loading) {
     return (
-      <button class="container btn btn-med btn-ghost loading mx-auto flex flex-row justify-center">loading</button>
+      <button className="container btn btn-med btn-ghost loading mx-auto flex flex-row justify-center">loading</button>
     )
   }
 
@@ -59,7 +59,6 @@ export default function ArtDetail() {
         <h4 className="mt-4 mr-6 text-lg font-light">{art.fields?.size}</h4>
         <h3 className="mt-4 ml-6 text-xl font-semibold">Medium</h3>
         <h4 className="mt-4 mb-6 mr-6 text-lg font-light">{art.fields?.medium}</h4>
-
       </div>
       <Link to={`/art/${id}/`}></Link>
       <Delete id={id} />

@@ -30,7 +30,7 @@ export default function ArtList() {
 
   if (loading) {
     return (
-      <button class="container btn btn-med btn-ghost loading mx-auto flex flex-row justify-center">loading</button>
+      <button className="container btn btn-med btn-ghost loading mx-auto flex flex-row justify-center">loading</button>
     )
   }
 
