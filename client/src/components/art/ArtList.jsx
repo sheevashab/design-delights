@@ -58,8 +58,10 @@ export default function ArtList() {
         })}
       </div>
       <Link to='/new'>
-        <button className="btn btn-outline text-gray-700 text-center mt-6 self-center">
-          Add Thoughtfully</button>
+        <div className="flex justify-center text-gray-700 text-center mt-6 font-bold">
+          <button className="btn btn-outline">
+            Add Thoughtfully</button>
+        </div>
       </Link>
     </div>
   );
