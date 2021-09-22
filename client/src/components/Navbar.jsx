@@ -11,33 +11,9 @@ export default function Navbar() {
             Design<br />Delights</h1>
         </Link>
       </div>
-      <DropDownMenu />
-      {/* <div
-        className="mr-4 text-medium-blue text-l text-right font-medium pt-4 pb-4 leading-relaxed align-middle lg:text-2xl lg:font-light">
-        <ul>
-          <li>
-            <Link
-              className="hover:text-yellow-50"
-              to="/art">Art
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="hover:text-yellow-50"
-              to="/fashion">Fashion</Link>
-          </li>
-          <li>
-            <Link
-              className="hover:text-yellow-50"
-              to="/interiors">Interiors</Link>
-          </li>
-          <li>
-            <Link
-              className="hover:text-yellow-50"
-              to="/architecture">Architecture</Link>
-          </li>
-        </ul>
-      </div> */}
+      <div className="mr-4">
+        <DropDownMenu />
+      </div>
     </div>
   )
 }

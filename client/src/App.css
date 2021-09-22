@@ -3,21 +3,25 @@
   top: -100px;
   transition: transform 0.5s ease-in-out;
   display: flex;
-  flex-direction: column;
-  width: 100px;
-  right: 5px;
-  color: white;
+  right: 6px;
 }
 
 .open{
   transform: translateY(100px);
-  width: 25%;
+  width: 33%;
   height: 25%;
-  background-color: orangered;
+  background-color: #ffe39f;
   z-index: 3;
   display:flex;
   flex-flow: column;
   justify-content: space-evenly;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  padding-top: 0;
+  color: #374151;
+  font-weight: bold;
 }
 
 .navbar{

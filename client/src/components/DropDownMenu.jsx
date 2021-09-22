@@ -1,23 +1,22 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { VscMenu } from "react-icons/vsc"
+import { VscThreeBars, VscChevronUp } from "react-icons/vsc"
 
 export default function DropDownMenu() {
   const [toggleMenu, setToggleMenu] = useState(false)
 
   return (
     <>
-      {/* (condition) ? true : false */}
-
       {toggleMenu === false ? (
         <button onClick={() => {
           setToggleMenu(prevState => !prevState)
         }}
-          className="hamburger text-white"><VscMenu size={50} /></button>) :
+          className="text-blue-300 text-3xl"><VscThreeBars /></button>) :
         (<div className={`dropdown open`}>
-          <p onClick={() => {
+          <button onClick={() => {
             setToggleMenu(prevState => !prevState)
-          }}>x</p>
+          }}
+            className="text-gray-700 text-2xl text-center"><VscChevronUp /></button>
           <Link
             className="hover:text-yellow-50"
             to="/art">Art</Link>
