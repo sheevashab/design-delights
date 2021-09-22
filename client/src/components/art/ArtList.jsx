@@ -59,7 +59,7 @@ export default function ArtList() {
       </div>
       <Link to='/new'>
         <div className="flex justify-center text-gray-700 text-center mt-6 font-bold">
-          <button className="btn btn-outline">
+          <button className="btn btn-outline mb-4">
             Add Thoughtfully</button>
         </div>
       </Link>

@@ -39,7 +39,7 @@ export default function Delete(props) {
   return (
     <div key={props.id}>
       <div className="flex justify-center">
-        <button className="btn btn-outline btn-circle" style={{ display: showDelete }} onClick={handleDelete}>
+        <button className="btn btn-outline btn-circle mb-4" style={{ display: showDelete }} onClick={handleDelete}>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
           </svg>

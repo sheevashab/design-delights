@@ -18,7 +18,7 @@ export default function EmailSubmit() {
         type="text"
         // value={email}
         placeholder="your e-mail" />
-      <button className="btn btn-outline font-bold text-gray-700 text-center place-self-center mt-2">
+      <button className="btn btn-outline font-bold text-gray-700 text-center place-self-center mt-2 mb-4">
         Join</button>
     </form>
   )
