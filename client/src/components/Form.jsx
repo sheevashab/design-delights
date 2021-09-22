@@ -70,7 +70,7 @@ export default function Form(props) {
           onChange={(e) => props.setImage(e.target.value)}
         />
         <br />
-        <button className="font-mono text-lg tracking-wide font-light bg-medium-blue text-yellow-50 hover:bg-blue-300 border-blue-200 text-md border-2 mt-4 py-1 px-4 rounded-full">
+        <button className="btn btn-outline text-gray-700 text-center mt-6 self-center">
           {props.type}</button>
       </form>
     </div>

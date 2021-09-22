@@ -18,7 +18,7 @@ export default function EmailSubmit() {
         type="text"
         // value={email}
         placeholder="your e-mail" />
-      <button className="place-self-center bg-blue-300 text-yellow-50 hover:bg-blue-200 border-blue-100 text-sm font-light border-2 mt-2 py-1 px-2 w-24 rounded-full font-mono">
+      <button className="btn btn-outline text-gray-700 text-center place-self-center mt-2">
         Subscribe</button>
     </form>
   )
