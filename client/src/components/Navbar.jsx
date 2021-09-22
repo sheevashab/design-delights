@@ -1,17 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import DropDownMenu from "./DropDownMenu";
 
 export default function Navbar() {
   return (
-    <div
-      className="flex flex-column justify-between items-center bg-gray-700">
+    <div className="navbar flex flex-column justify-between items-center bg-gray-700">
       <div>
         <Link to="/">
           <h1 className="ml-4 text-2xl font-bold text-yellow-50 leading-relaxed align-middle lg:text-6xl">
             Design<br />Delights</h1>
         </Link>
       </div>
-      <div
+      <DropDownMenu />
+      {/* <div
         className="mr-4 text-medium-blue text-l text-right font-medium pt-4 pb-4 leading-relaxed align-middle lg:text-2xl lg:font-light">
         <ul>
           <li>
@@ -36,7 +37,7 @@ export default function Navbar() {
               to="/architecture">Architecture</Link>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   )
 }

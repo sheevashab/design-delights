@@ -38,7 +38,7 @@ export default function Delete(props) {
 
   return (
     <div key={props.id}>
-      <button className="font-mono flex flex-row justify-content-center text-lg tracking-wide font-light bg-medium-blue text-yellow-50 hover:bg-blue-300 border-blue-200 text-md border-2 mt-4 py-1 px-4 rounded-full"
+      <button className="bg-blue-300 text-yellow-50 hover:bg-blue-200 border-blue-100 text-sm font-light border-2 mt-2 py-1 px-3 rounded-full font-mono"
         style={{ display: showDelete }} onClick={handleDelete}>Delete<br />Thoughtfully</button >
     </div >
   )

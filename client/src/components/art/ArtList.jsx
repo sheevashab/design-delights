@@ -1,5 +1,6 @@
 import axios from "axios";
 import React from "react";
+import Delete from "./Delete"
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -59,8 +60,11 @@ export default function ArtList() {
           );
         })}
       </div>
+
+      <Delete />
+
       <Link to='/new'>
-        <button className="place-content-center font-mono text-lg tracking-wide font-light bg-medium-blue text-yellow-50 hover:bg-blue-300 border-blue-200 text-md border-2 mt-4 py-1 px-4 rounded-full">
+        <button className="bg-blue-300 text-yellow-50 hover:bg-blue-200 border-blue-100 text-sm font-light border-2 mt-2 py-1 px-3 rounded-full font-mono">
           Add<br />Thoughtfully</button>
       </Link>
     </div>

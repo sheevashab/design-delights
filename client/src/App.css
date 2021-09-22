@@ -1,26 +1,18 @@
-/* .App {
-  text-align: center;
-  background-color: #96CCFF;
-  color: #FFFCEB;
+.dropdown {
+  position: fixed;
+  top: -100px;
+  transition: transform 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  right: 5px;
+  color: white;
 }
 
-.Links {
-  background-color: #96CCFF;
-  color: #FFFCEB;
-  text-decoration: none;
+.open{
+  transform: translateY(100px);
 }
 
-.thumbnailImage {
-  height: 200px;
-  width: auto;
+.navbar{
+z-index: 2;
 }
-
-.image {
-  height: 300px;
-  width: auto;
-}
-
-@media screen and (min-width: 480px) {
-
-
-} */
