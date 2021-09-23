@@ -43,7 +43,7 @@ export default function ArtDetail() {
   return (
     <div className="leading-loose text-gray-700">
       <Link to={`/art`}>
-        <img className="sm:w-screen md:" src={art.fields?.image} alt="artwork" />
+        <img className="sm:w-screen md:max-w-4xl md:self-center" src={art.fields?.image} alt="artwork" />
       </Link>
       <div className="grid grid-cols-2">
         <h3 className="mt-6 ml-6 text-xl font-semibold lg:text-3xl">Title</h3>

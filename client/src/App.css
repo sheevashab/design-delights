@@ -1,32 +1,33 @@
 .dropdown {
   position: fixed;
-  top: -120px;
-  transition: transform 0.5s ease-in-out;
-  display: flex;
-  right: 6px;
-  color:white;
-}
-
-.open{
-  transform: translateY(120px);
-  width: 150px;
-  height: auto;
   background-color: #ffe39f;
   z-index: 3;
-  display:flex;
+  display: flex;
   flex-flow: column;
   justify-content: space-evenly;
   align-items: center;
   border-radius: 10px;
   margin-top: 2rem;
   margin-right: 1rem;
-  padding: 1rem .5rem;
+  padding: 1rem 0.5rem;
   color: #374151;
   font-weight: bold;
-  opacity:.85;
+  width: 150px;
+  opacity: 0.85;
+  top: -200px;
+  transition: transform 0.5s ease-in-out;
+  right: 6px;
+  color: #393f5a;
 }
 
-.navbar{
-z-index: 2;
+.open {
+  width: 150px;
+  height: auto;
+  z-index: 3;
+  opacity: 1;
+  transform: translateY(250px);
 }
 
+.navbar {
+  z-index: 1;
+}

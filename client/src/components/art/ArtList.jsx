@@ -38,18 +38,13 @@ export default function ArtList() {
       <div>
         {art.map((pieces, index) => {
           return (
-            <div className="flex flex-col place-items-center text-center md:flex-wrap" key={index}>
+            <div className="container flex flex-col place-items-center text-center md:flex-row md:flex-wrap" key={index}>
               <Link to={`/art/${pieces.id}`}>
                 <img className="w-56 mt-8 rounded-3xl border-4 border-medium-orange" src={pieces.fields.image} alt="artwork thumbnail" />
               </Link>
               <Link to={`/art/${pieces.id}`}>
                 <button className="font-semibold text-lg border-2 border-medium-orange rounded-3xl px-2 m-2 mt-4">{pieces.fields.title}</button>
               </Link>
-              <div className="text-gray-700 font-normal leading-snug">
-                <h4>{pieces.fields.artist}</h4>
-                <h4>{pieces.fields.origin}</h4>
-                <h4>{pieces.fields.year}</h4>
-              </div>
             </div>
           );
         })}
