@@ -35,12 +35,13 @@ export default function ArtList() {
 
   return (
     <div className="h-screen w-full overflow-auto">
-      <div className="md:grid md:grid-cols-3 md:justify-evenly md:m-10">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-evenly md:m-10">
         {art.map((pieces, index) => {
           return (
-            <div className="container flex flex-col place-items-center text-center" key={index}>
+            <div className="flex flex-col place-items-center text-center" key={index}>
               <Link to={`/art/${pieces.id}`}>
-                <img className="w-60 mt-8 rounded-3xl border-4 border-medium-orange" src={pieces.fields.image} alt="artwork thumbnail" />
+                <img className="w-60 mt-8 rounded-3xl border-4 border-medium-orange"
+                  src={pieces.fields.image} alt="artwork thumbnail" />
               </Link>
               <Link to={`/art/${pieces.id}`}>
                 <button className="font-medium text-gray-700 text-lg border-2 border-soft-yellow rounded-lg px-2 m-2 mt-3 w-xl hover:bg-soft-yellow">{pieces.fields.title}</button>
