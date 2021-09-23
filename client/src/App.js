@@ -5,6 +5,8 @@ import ArtDetail from "./components/art/ArtDetail";
 import ArtPost from "./components/art/ArtPost";
 import EmailSubmit from "./components/EmailSubmit";
 import FashionList from "./components/fashion/FashionList";
+import FashionDetail from "./components/fashion/FashionDetail";
+import FashionPost from "./components/fashion/FashionPost";
 import { Route, Link } from "react-router-dom";
 
 function App() {
@@ -46,7 +48,7 @@ function App() {
           <ArtDetail />
         </Route>
 
-        <Route path="/art/new">
+        <Route exact path="/art/new">
           <ArtPost />
         </Route>
 
@@ -56,11 +58,11 @@ function App() {
         </Route>
 
         <Route exact path="/fashion/:id">
-          <ArtDetail />
+          <FashionDetail />
         </Route>
 
-        <Route path="/fashion/new">
-          <ArtPost />
+        <Route exact path="/fashion/new">
+          <FashionPost />
         </Route>
 
       </div>

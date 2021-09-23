@@ -35,10 +35,10 @@ export default function ArtList() {
 
   return (
     <div className="h-screen w-full overflow-auto">
-      <div>
+      <div className="md:grid md:grid-cols-3 md:justify-evenly md:m-10">
         {art.map((pieces, index) => {
           return (
-            <div className="container flex flex-col place-items-center text-center md:flex-row md:flex-wrap" key={index}>
+            <div className="container flex flex-col place-items-center text-center" key={index}>
               <Link to={`/art/${pieces.id}`}>
                 <img className="w-56 mt-8 rounded-3xl border-4 border-medium-orange" src={pieces.fields.image} alt="artwork thumbnail" />
               </Link>
