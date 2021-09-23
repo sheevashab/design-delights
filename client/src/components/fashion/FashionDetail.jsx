@@ -43,13 +43,15 @@ export default function FashionDetail() {
   return (
     <div className="leading-loose text-gray-700">
       <Link to={'/fashion'}>
-        <img className="sm:w-screen md:" src={fashion.fields?.image} alt="piece of fashion" />
+        <div className="flex flex-row justify-center">
+          <img className="w-screen md:max-w-4xl md:self-center lg:mt-16" src={fashion.fields?.image} alt="piece of fashion" />
+        </div>
       </Link>
-      <div className="grid grid-cols-2">
-        <h3 className="mt-6 ml-6 text-xl font-semibold lg:text-3xl">Designer</h3>
-        <h4 className="mt-6 mr-6 text-lg font-light lg:text-2xl">{fashion.fields?.designer}</h4>
-        <h3 className="mt-4 ml-6 text-xl font-semibold lg:text-3xl">Website</h3>
-        <h4 className="mt-4 mr-6 text-lg font-light lg:text-2xl">{fashion.fields?.website}</h4>
+      <div className="grid grid-cols-2 gap-x-12 m-2">
+        <h3 className="mt-6 text-xl text-right font-semibold">Designer</h3>
+        <h4 className="mt-6 text-lg text-left font-light">{fashion.fields?.designer}</h4>
+        <h3 className="mt-4 text-xl text-right font-semibold">Website</h3>
+        <h4 className="mt-4 text-lg text-left font-light">{fashion.fields?.website}</h4>
       </div>
       <Link to={`/fashion/${id}/`}></Link>
       <DeleteFashion id={id} />

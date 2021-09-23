@@ -47,22 +47,24 @@ export default function ArtDetail() {
           <img className="w-screen md:max-w-4xl md:self-center lg:mt-16" src={art.fields?.image} alt="artwork" />
         </div>
       </Link>
-      <div className="grid grid-cols-2">
-        <h3 className="mt-6 lg:mt-16 ml-6 lg:ml-20 text-xl font-semibold lg:text-3xl">Title</h3>
-        <h4 className="mt-6 lg:mt-16 mr-6 text-lg font-light lg:text-2xl">{art.fields?.title}</h4>
-        <h3 className="mt-4 ml-6 lg:ml-20 text-xl font-semibold lg:text-3xl">Artist</h3>
-        <h4 className="mt-4 mr-6 text-lg font-light lg:text-2xl">{art.fields?.artist}</h4>
-        <h3 className="mt-4 ml-6 lg:ml-20 text-xl font-semibold lg:text-3xl">Origin</h3>
-        <h4 className="mt-4 mr-6 text-lg font-light lg:text-2xl">{art.fields?.origin}</h4>
-        <h3 className="mt-4 ml-6 lg:ml-20 text-xl font-semibold lg:text-3xl">Year</h3>
-        <h4 className="mt-4 mr-6 text-lg font-light lg:text-2xl">{art.fields?.year}</h4>
-        <h3 className="mt-4 ml-6 lg:ml-20 text-xl font-semibold lg:text-3xl">Size</h3>
-        <h4 className="mt-4 mr-6 text-lg font-light lg:text-2xl">{art.fields?.size}</h4>
-        <h3 className="mt-4 ml-6 lg:ml-20 text-xl font-semibold lg:text-3xl">Medium</h3>
-        <h4 className="mt-4 mb-6 lg:mb-16 mr-6 text-lg font-light lg:text-2xl">{art.fields?.medium}</h4>
+      <div className="grid grid-cols-2 gap-x-12 m-2">
+        <h3 className="mt-6 text-xl text-right font-semibold">Title</h3>
+        <h4 className="mt-6 text-lg text-left font-light">{art.fields?.title}</h4>
+        <h3 className="mt-4 text-xl text-right font-semibold">Artist</h3>
+        <h4 className="mt-4 text-lg text-left font-light">{art.fields?.artist}</h4>
+        <h3 className="mt-4 text-xl text-right font-semibold">Origin</h3>
+        <h4 className="mt-4 text-lg text-left font-light">{art.fields?.origin}</h4>
+        <h3 className="mt-4 text-xl text-right font-semibold">Year</h3>
+        <h4 className="mt-4 text-lg text-left font-light">{art.fields?.year}</h4>
+        <h3 className="mt-4 text-xl text-right font-semibold">Size</h3>
+        <h4 className="mt-4 text-lg text-left font-light">{art.fields?.size}</h4>
+        <h3 className="mt-4 text-xl text-right font-semibold">Medium</h3>
+        <h4 className="mt-4 text-lg text-left font-light">{art.fields?.medium}</h4>
       </div>
       <Link to={`/art/${id}/`}></Link>
       <ArtDelete id={id} />
     </div>
   )
 }
+
+// 
