@@ -1,14 +1,15 @@
 .dropdown {
   position: fixed;
-  top: -100px;
+  top: -120px;
   transition: transform 0.5s ease-in-out;
   display: flex;
   right: 6px;
+  color:white;
 }
 
 .open{
-  transform: translateY(100px);
-  width: 33%;
+  transform: translateY(120px);
+  width: 150px;
   height: auto;
   background-color: #ffe39f;
   z-index: 3;

@@ -40,10 +40,10 @@ export default function ArtList() {
         {art.map((pieces, index) => {
           return (
             <div className="flex flex-col place-items-center text-center" key={index}>
-              <Link to={`/art/${pieces.id}`} key={pieces.id}>
+              <Link to={`/art/${pieces.id}`}>
                 <img className="place-content-center w-48 mt-8 rounded-3xl border-4 border-medium-orange" src={pieces.fields.image} alt="artwork thumbnail" />
               </Link>
-              <Link to={`/art/${pieces.id}`} key={pieces.id}>
+              <Link to={`/art/${pieces.id}`}>
                 <button className="font-semibold text-lg border-2 border-medium-orange rounded-3xl px-2 m-2 mt-4">{pieces.fields.title}</button>
               </Link>
               <div className="text-gray-700 font-normal leading-snug">
