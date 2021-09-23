@@ -30,7 +30,7 @@ export default function ArtList() {
 
   if (loading) {
     return (
-      <button className="container btn btn-med btn-ghost loading mx-auto flex flex-row justify-center">loading</button>
+      <button className="container btn btn-lg btn-ghost loading mx-auto flex flex-row justify-center"></button>
     )
   }
 
@@ -39,9 +39,9 @@ export default function ArtList() {
       <div>
         {art.map((pieces, index) => {
           return (
-            <div className="flex flex-col place-items-center text-center" key={index}>
+            <div className="flex flex-col place-items-center text-center md:grid-cols-2 md:col-span-2" key={index}>
               <Link to={`/art/${pieces.id}`}>
-                <img className="place-content-center w-48 mt-8 rounded-3xl border-4 border-medium-orange" src={pieces.fields.image} alt="artwork thumbnail" />
+                <img className="w-56 mt-8 rounded-3xl border-4 border-medium-orange" src={pieces.fields.image} alt="artwork thumbnail" />
               </Link>
               <Link to={`/art/${pieces.id}`}>
                 <button className="font-semibold text-lg border-2 border-medium-orange rounded-3xl px-2 m-2 mt-4">{pieces.fields.title}</button>
@@ -50,8 +50,6 @@ export default function ArtList() {
                 <h4>{pieces.fields.artist}</h4>
                 <h4>{pieces.fields.origin}</h4>
                 <h4>{pieces.fields.year}</h4>
-
-
               </div>
             </div>
           );

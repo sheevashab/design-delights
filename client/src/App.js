@@ -13,7 +13,7 @@ function App() {
       <Navbar />
 
       <Route exact path="/">
-        <img className="mx-auto w-4/5 max-w-lg mt-8 lg:w-auto xl:max-w-5xl"
+        <img className="mx-auto w-4/5 max-w-lg mt-8 lg:w-auto xl:max-w-4xl"
           src="https://orleyshabahang.com/wp-content/uploads/bb-plugin/cache/F295_Hadas_111KaneSt-min-scaled-square.jpg"
           alt="interior view of curated living room" />
 

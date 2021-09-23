@@ -37,28 +37,28 @@ export default function ArtDetail() {
 
   if (loading) {
     return (
-      <button className="container btn btn-med btn-ghost loading mx-auto flex flex-row justify-center">loading</button>
+      <button className="container btn btn-lg btn-ghost loading mx-auto flex flex-row justify-center"></button>
     )
   }
 
   return (
     <div className="leading-loose text-gray-700">
       <Link to={`/art`}>
-        <img className="w-screen" src={art.fields?.image} alt="artwork" />
+        <img className="sm:w-screen md:" src={art.fields?.image} alt="artwork" />
       </Link>
       <div className="grid grid-cols-2">
-        <h3 className="mt-6 ml-6 text-xl font-semibold">Title</h3>
-        <h4 className="mt-6 mr-6 text-lg font-light">{art.fields?.title}</h4>
-        <h3 className="mt-4 ml-6 text-xl font-semibold">Artist</h3>
-        <h4 className="mt-4 mr-6 text-lg font-light">{art.fields?.artist}</h4>
-        <h3 className="mt-4 ml-6 text-xl font-semibold">Origin</h3>
-        <h4 className="mt-4 mr-6 text-lg font-light">{art.fields?.origin}</h4>
-        <h3 className="mt-4 ml-6 text-xl font-semibold">Year</h3>
-        <h4 className="mt-4 mr-6 text-lg font-light">{art.fields?.year}</h4>
-        <h3 className="mt-4 ml-6 text-xl font-semibold">Size</h3>
-        <h4 className="mt-4 mr-6 text-lg font-light">{art.fields?.size}</h4>
-        <h3 className="mt-4 ml-6 text-xl font-semibold">Medium</h3>
-        <h4 className="mt-4 mb-6 mr-6 text-lg font-light">{art.fields?.medium}</h4>
+        <h3 className="mt-6 ml-6 text-xl font-semibold lg:text-3xl">Title</h3>
+        <h4 className="mt-6 mr-6 text-lg font-light lg:text-2xl">{art.fields?.title}</h4>
+        <h3 className="mt-4 ml-6 text-xl font-semibold lg:text-3xl">Artist</h3>
+        <h4 className="mt-4 mr-6 text-lg font-light lg:text-2xl">{art.fields?.artist}</h4>
+        <h3 className="mt-4 ml-6 text-xl font-semibold lg:text-3xl">Origin</h3>
+        <h4 className="mt-4 mr-6 text-lg font-light lg:text-2xl">{art.fields?.origin}</h4>
+        <h3 className="mt-4 ml-6 text-xl font-semibold lg:text-3xl">Year</h3>
+        <h4 className="mt-4 mr-6 text-lg font-light lg:text-2xl">{art.fields?.year}</h4>
+        <h3 className="mt-4 ml-6 text-xl font-semibold lg:text-3xl">Size</h3>
+        <h4 className="mt-4 mr-6 text-lg font-light lg:text-2xl">{art.fields?.size}</h4>
+        <h3 className="mt-4 ml-6 text-xl font-semibold lg:text-3xl">Medium</h3>
+        <h4 className="mt-4 mb-6 mr-6 text-lg font-light lg:text-2xl">{art.fields?.medium}</h4>
       </div>
       <Link to={`/art/${id}/`}></Link>
       <Delete id={id} />

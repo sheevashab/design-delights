@@ -11,7 +11,7 @@ export default function DropDownMenu() {
         <button onClick={() => {
           setToggleMenu(prevState => !prevState)
         }}
-          className="text-medium-orange text-3xl"><VscThreeBars /></button>) :
+          className="text-medium-orange text-3xl lg:text-4xl"><VscThreeBars /></button>) :
         (<div className={`dropdown open`}>
           <button onClick={() => {
             setToggleMenu(prevState => !prevState)
