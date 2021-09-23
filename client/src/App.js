@@ -12,7 +12,6 @@ import { Route, Link, Switch } from "react-router-dom";
 function App() {
   return (
     <div className="h-screen w-full overflow-auto">
-
       <Navbar />
       <div className="flex flex-col justify-around md:justify-between">
         <Switch>
@@ -55,16 +54,16 @@ function App() {
 
           <Route exact path="/fashion">
             <FashionList />
-            <div className="Links"></div>
+          </Route>
+
+          <Route exact path="/fashion/new">
+            <FashionPost />
           </Route>
 
           <Route exact path="/fashion/:id">
             <FashionDetail />
           </Route>
 
-          <Route exact path="/fashion/new">
-            <FashionPost />
-          </Route>
         </Switch>
       </div>
     </div >
