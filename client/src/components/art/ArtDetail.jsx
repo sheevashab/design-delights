@@ -32,7 +32,7 @@ export default function ArtDetail() {
     }
     fetchArt();
     // eslint-disable-next-line
-  }, [id])
+  }, [])
 
   if (loading) {
     return (
