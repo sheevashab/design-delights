@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Form(props) {
+export default function ArtForm(props) {
   return (
     <div className="form-control">
       <form className="flex flex-col mx-auto mt-6 w-56" onSubmit={props.handleSubmit}>

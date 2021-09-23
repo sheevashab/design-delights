@@ -2,7 +2,7 @@ import axios from "axios";
 import React from "react";
 import { useState } from "react";
 import { useHistory } from "react-router";
-import Form from "../Form"
+import ArtForm from "./ArtForm"
 
 const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
 const airtableKey = process.env.REACT_APP_AIRTABLE_KEY;
@@ -36,13 +36,13 @@ export default function ArtPost() {
       image,
     };
     const res = await axios.post(URL, { fields }, config);
-    history.push(`/art`);
+    history.push('/art');
     console.log(res.data);
   };
 
   return (
     <div className="AddForm">
-      <Form
+      <ArtForm
         title={title}
         setTitle={setTitle}
         artist={artist}

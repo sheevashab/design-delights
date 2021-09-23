@@ -4,6 +4,7 @@ import ArtList from "./components/art/ArtList";
 import ArtDetail from "./components/art/ArtDetail";
 import ArtPost from "./components/art/ArtPost";
 import EmailSubmit from "./components/EmailSubmit";
+import FashionList from "./components/fashion/FashionList";
 import { Route, Link } from "react-router-dom";
 
 function App() {
@@ -45,7 +46,20 @@ function App() {
           <ArtDetail />
         </Route>
 
-        <Route path="/new">
+        <Route path="/art/new">
+          <ArtPost />
+        </Route>
+
+        <Route exact path="/fashion">
+          <FashionList />
+          <div className="Links"></div>
+        </Route>
+
+        <Route exact path="/fashion/:id">
+          <ArtDetail />
+        </Route>
+
+        <Route path="/fashion/new">
           <ArtPost />
         </Route>
 

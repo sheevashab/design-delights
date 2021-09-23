@@ -1,6 +1,6 @@
 import axios from "axios";
 import React from "react";
-import Delete from "./Delete"
+import ArtDelete from "./ArtDelete"
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
@@ -24,7 +24,6 @@ export default function ArtDetail() {
     async function fetchArt() {
       try {
         const res = await axios.get(`${URL}/${id}`, config);
-        console.log(res.data);
         setArt(res.data);
         setLoading(false);
       } catch (error) {
@@ -61,7 +60,7 @@ export default function ArtDetail() {
         <h4 className="mt-4 mb-6 mr-6 text-lg font-light lg:text-2xl">{art.fields?.medium}</h4>
       </div>
       <Link to={`/art/${id}/`}></Link>
-      <Delete id={id} />
+      <ArtDelete id={id} />
     </div>
   )
 }
