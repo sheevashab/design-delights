@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import PostButtons from "./components/PostButtons";
 import EmailSubmit from "./components/EmailSubmit";
+import Footer from "./components/Footer"
 import ArtList from "./components/art/ArtList";
 import ArtDetail from "./components/art/ArtDetail";
 import ArtPost from "./components/art/ArtPost";
@@ -20,7 +21,7 @@ function App() {
   return (
     <div id="app" className="h-screen w-full overflow-auto">
       <Navbar />
-      <div className="flex flex-col justify-around md:justify-between">
+      <div className="flex flex-col justify-around min-h-screen md:justify-between">
         <Switch>
           <Route exact path="/">
             <img className="mx-auto w-4/5 max-w-lg mt-8 lg:w-auto xl:max-w-4xl"
@@ -90,6 +91,7 @@ function App() {
             <ArchitectureDetail />
           </Route>
         </Switch>
+        <Footer />
       </div>
     </div >
   );

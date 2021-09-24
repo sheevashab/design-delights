@@ -2,8 +2,8 @@ import React from "react";
 
 export default function InteriorsForm(props) {
   return (
-    <div className="form-control">
-      <form className="flex flex-col mx-auto mt-6 bg-soft-yellow rounded-xl px-12 py-6" onSubmit={props.handleSubmit}>
+    <div className="form-control my-6 lg:my-24">
+      <form className="flex flex-col mx-auto bg-soft-yellow rounded-xl px-12 py-6" onSubmit={props.handleSubmit}>
         <h1 className="text-gray-700 text-2xl text-center font-normal leading-relaxed">Add Your Delights:</h1>
         <label className="label mt-4">
           <span className="label-text text-base text-gray-700">Product Name</span></label>
