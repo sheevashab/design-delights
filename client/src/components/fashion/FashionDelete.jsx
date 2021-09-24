@@ -33,7 +33,7 @@ export default function DeleteFashion(props) {
     } else {
       setShowDelete("block")
     }
-  }, [])
+  }, [props.id])
 
   return (
     <div key={props.id}>

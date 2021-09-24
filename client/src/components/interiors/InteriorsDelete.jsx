@@ -33,7 +33,7 @@ export default function InteriorsDelete(props) {
     } else {
       setShowDelete("block")
     }
-  }, [])
+  }, [props.id])
 
   return (
     <div key={props.id}>

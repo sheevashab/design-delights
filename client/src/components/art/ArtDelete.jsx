@@ -33,7 +33,7 @@ export default function ArtDelete(props) {
     } else {
       setShowDelete("block")
     }
-  }, [])
+  }, [props.id])
 
   return (
     <div key={props.id}>
