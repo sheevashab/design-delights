@@ -48,10 +48,10 @@ export default function ArchitectureDetail() {
         </div>
       </Link>
       <div className="grid grid-cols-2 gap-x-12 m-2">
-        <h3 className="mt-6 text-xl text-right font-semibold">Title</h3>
-        <h4 className="mt-6 text-lg text-left font-light">{architecture.fields?.title}</h4>
-        <h3 className="mt-4 text-xl text-right font-semibold">Architect</h3>
-        <h4 className="mt-4 text-lg text-left font-light">{architecture.fields?.architect}</h4>
+        <h3 className="mt-6 text-xl text-right font-semibold">Architect</h3>
+        <h4 className="mt-6 text-lg text-left font-light">{architecture.fields?.architect}</h4>
+        <h3 className="mt-4 text-xl text-right font-semibold">Title</h3>
+        <h4 className="mt-4 text-lg text-left font-light">{architecture.fields?.title}</h4>
         <h3 className="mt-4 text-xl text-right font-semibold">Location</h3>
         <h4 className="mt-4 text-lg text-left font-light">{architecture.fields?.location}</h4>
         <h3 className="mt-4 text-xl text-right font-semibold">Style</h3>

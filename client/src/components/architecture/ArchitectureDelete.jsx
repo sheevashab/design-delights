@@ -24,7 +24,7 @@ export default function ArchitectureDelete(props) {
   }
 
   useEffect(() => {
-    if (props.id === "recFRRWQm0HPC71nq" ||
+    if (props.id === "recki8L07gyhFHqFy" ||
       props.id === "recgRQ1QgZyxxE1Bt" ||
       props.id === "recki8L07gyhFHqFy" ||
       props.id === "recpzNH4YwWlhacCH"

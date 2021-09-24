@@ -39,11 +39,11 @@ export default function ArchitectureList() {
         {architecture.map((building, index) => {
           return (
             <div className="flex flex-col place-items-center text-center" key={index}>
-              <Link to={`/architect/${building.id}`}>
+              <Link to={`/architecture/${building.id}`}>
                 <img className="w-60 mt-8 rounded-3xl border-4 border-medium-orange"
                   src={building.fields.image} alt="building thumbnail" />
               </Link>
-              <Link to={`/architect/${building.id}`}>
+              <Link to={`/architecture/${building.id}`}>
                 <button className="font-medium text-gray-700 text-lg border-2 border-soft-yellow rounded-lg px-2 m-2 mt-3 w-xl hover:bg-soft-yellow">{building.fields.title}</button>
               </Link>
             </div>
