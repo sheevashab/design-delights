@@ -1,12 +1,15 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
+import EmailSubmit from "./components/EmailSubmit";
 import ArtList from "./components/art/ArtList";
 import ArtDetail from "./components/art/ArtDetail";
 import ArtPost from "./components/art/ArtPost";
-import EmailSubmit from "./components/EmailSubmit";
 import FashionList from "./components/fashion/FashionList";
 import FashionDetail from "./components/fashion/FashionDetail";
 import FashionPost from "./components/fashion/FashionPost";
+import InteriorsList from "./components/interiors/InteriorsList";
+import InteriorsDetail from "./components/interiors/InteriorsDetail";
+import InteriorsPost from "./components/interiors/InteriorsPost"
 import { Route, Link, Switch } from "react-router-dom";
 
 function App() {
@@ -62,6 +65,18 @@ function App() {
 
           <Route exact path="/fashion/:id">
             <FashionDetail />
+          </Route>
+
+          <Route exact path="/interiors">
+            <InteriorsList />
+          </Route>
+
+          <Route exact path="/interiors/new">
+            <InteriorsPost />
+          </Route>
+
+          <Route exact path="/interiors/:id">
+            <InteriorsDetail />
           </Route>
 
         </Switch>
