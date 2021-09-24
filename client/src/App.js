@@ -14,7 +14,7 @@ import { Route, Link, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <div className="h-screen w-full overflow-auto">
+    <div id="app" className="h-screen w-full overflow-auto">
       <Navbar />
       <div className="flex flex-col justify-around md:justify-between">
         <Switch>
