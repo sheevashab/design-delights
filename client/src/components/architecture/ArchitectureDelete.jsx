@@ -23,17 +23,17 @@ export default function ArchitectureDelete(props) {
     return res.data;
   }
 
-  // useEffect(() => {
-  //   if (props.id === "rec7RJwKVZvmFPkzY" ||
-  //     props.id === "rec9OKf4ExE4HUlO5" ||
-  //     props.id === "recKgfuYG15nxsxkZ" ||
-  //     props.id === "recoJyNgJwKb61mBl"
-  //   ) {
-  //     setShowDelete("none")
-  //   } else {
-  //     setShowDelete("block")
-  //   }
-  // }, [props.id])
+  useEffect(() => {
+    if (props.id === "recFRRWQm0HPC71nq" ||
+      props.id === "recgRQ1QgZyxxE1Bt" ||
+      props.id === "recki8L07gyhFHqFy" ||
+      props.id === "recpzNH4YwWlhacCH"
+    ) {
+      setShowDelete("none")
+    } else {
+      setShowDelete("block")
+    }
+  }, [props.id])
 
   return (
     <div key={props.id}>
