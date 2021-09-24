@@ -44,7 +44,7 @@ export default function InteriorsList() {
                   src={designs.fields.image} alt="design thumbnail" />
               </Link>
               <Link to={`/interiors/${designs.id}`}>
-                <button className="font-medium text-gray-700 text-lg border-2 border-soft-yellow rounded-lg px-2 m-2 mt-3 w-xl hover:bg-soft-yellow">{designs.fields.title}</button>
+                <button className="font-medium text-gray-700 text-lg border-2 border-soft-yellow rounded-lg px-2 m-2 mt-3 w-xl hover:bg-soft-yellow">{designs.fields.productName}</button>
               </Link>
             </div>
           );

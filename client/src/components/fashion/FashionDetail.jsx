@@ -51,7 +51,9 @@ export default function FashionDetail() {
         <h3 className="mt-6 text-xl text-right font-semibold">Designer</h3>
         <h4 className="mt-6 text-lg text-left font-light">{fashion.fields?.designer}</h4>
         <h3 className="mt-4 text-xl text-right font-semibold">Website</h3>
-        <h4 className="mt-4 text-lg text-left font-light">{fashion.fields?.website}</h4>
+        {/* <Link to={fashion.fields?.website} className="mt-4 text-lg text-left font-light"></Link> */}
+        <a href={fashion.fields?.website} />
+        {/* <h4 className="mt-4 text-lg text-left font-light">{fashion.fields?.website}</h4> */}
       </div>
       <Link to={`/fashion/${id}/`}></Link>
       <DeleteFashion id={id} />

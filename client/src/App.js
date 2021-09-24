@@ -37,6 +37,27 @@ function App() {
               </div>
             </Link>
 
+            <Link to='/fashion/new'>
+              <div className="flex justify-center">
+                <button className="btn btn-outline text-gray-700 text-center mt-4 font-bold">
+                  Add Your Fashion</button>
+              </div>
+            </Link>
+
+            <Link to='/interiors/new'>
+              <div className="flex justify-center">
+                <button className="btn btn-outline text-gray-700 text-center mt-4 font-bold">
+                  Add Your Interiors</button>
+              </div>
+            </Link>
+
+            {/* <Link to='/architecture/new'>
+              <div className="flex justify-center">
+                <button className="btn btn-outline text-gray-700 text-center mt-4 font-bold">
+                  Add Your Architecture</button>
+              </div>
+            </Link> */}
+
             <div>
               <EmailSubmit />
             </div>

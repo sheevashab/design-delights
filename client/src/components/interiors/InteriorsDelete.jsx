@@ -26,8 +26,8 @@ export default function InteriorsDelete(props) {
   useEffect(() => {
     if (props.id === "recGYBI6GuTpGX2iw" ||
       props.id === "recJuHADKVsgCWrkG" ||
-      props.id === "recY9vseeH3cDdKZ7"
-      //     || props.id === "recoJyNgJwKb61mBl"
+      props.id === "recY9vseeH3cDdKZ7" ||
+      props.id === "recaVENL4MeiWCZtc"
     ) {
       setShowDelete("none")
     } else {
