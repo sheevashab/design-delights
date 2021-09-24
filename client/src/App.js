@@ -1,5 +1,6 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
+import PostButtons from "./components/PostButtons";
 import EmailSubmit from "./components/EmailSubmit";
 import ArtList from "./components/art/ArtList";
 import ArtDetail from "./components/art/ArtDetail";
@@ -13,7 +14,7 @@ import InteriorsPost from "./components/interiors/InteriorsPost"
 import ArchitectureList from "./components/architecture/ArchitectureList";
 import ArchitectureDetail from "./components/architecture/ArchitectureDetail";
 import ArchitecturePost from "./components/architecture/ArchitecturePost";
-import { Route, Link, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 function App() {
   return (
@@ -31,35 +32,9 @@ function App() {
             <p className="mt-4 ml-8 mr-8 text-center text-l text-gray-700 font-light leading-relaxed">
               Our interactive blog allows you, the user, a platform to gain a little inspo or to give a little inspo.</p>
 
-            <p className="mt-8 text-center text-xl text-gray-700 font-semibold">
-              Get Started</p>
-            <Link to='/art/new'>
-              <div className="flex justify-center">
-                <button className="btn btn-outline text-gray-700 text-center mt-4 font-bold">
-                  Add Your Art</button>
-              </div>
-            </Link>
-
-            <Link to='/fashion/new'>
-              <div className="flex justify-center">
-                <button className="btn btn-outline text-gray-700 text-center mt-4 font-bold">
-                  Add Your Fashion</button>
-              </div>
-            </Link>
-
-            <Link to='/interiors/new'>
-              <div className="flex justify-center">
-                <button className="btn btn-outline text-gray-700 text-center mt-4 font-bold">
-                  Add Your Interiors</button>
-              </div>
-            </Link>
-
-            <Link to='/architecture/new'>
-              <div className="flex justify-center">
-                <button className="btn btn-outline text-gray-700 text-center mt-4 font-bold">
-                  Add Your Architecture</button>
-              </div>
-            </Link>
+            <div>
+              <PostButtons />
+            </div>
 
             <div>
               <EmailSubmit />
