@@ -7,7 +7,7 @@ export default function EmailSubmit() {
   const handleInput = (e) => {
     setEmail(e.target.value)
   }
-
+  console.log(email);
   return (
     <form className="grid grid-cols-1">
       <h3 className="text-center text-xl text-gray-700 font-semibold mt-8">
