@@ -3,7 +3,7 @@ import React from "react";
 export default function ArtForm(props) {
   return (
     <div className="form-control">
-      <form className="flex flex-col mx-auto mt-6 w-56" onSubmit={props.handleSubmit}>
+      <form className="flex flex-col mx-auto mt-6 bg-soft-yellow rounded-xl px-12 py-6" onSubmit={props.handleSubmit}>
         <h1 className="text-gray-700 text-2xl text-center font-normal leading-relaxed">Add Your Delights:</h1>
         <label className="label mt-4">
           <span className="label-text text-base text-gray-700">Title</span></label>
