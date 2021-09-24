@@ -10,6 +10,9 @@ import FashionPost from "./components/fashion/FashionPost";
 import InteriorsList from "./components/interiors/InteriorsList";
 import InteriorsDetail from "./components/interiors/InteriorsDetail";
 import InteriorsPost from "./components/interiors/InteriorsPost"
+import ArchitectureList from "./components/architecture/ArchitectureList";
+import ArchitectureDetail from "./components/architecture/ArchitectureDetail";
+import ArchitecturePost from "./components/architecture/ArchitecturePost";
 import { Route, Link, Switch } from "react-router-dom";
 
 function App() {
@@ -51,12 +54,12 @@ function App() {
               </div>
             </Link>
 
-            {/* <Link to='/architecture/new'>
+            <Link to='/architecture/new'>
               <div className="flex justify-center">
                 <button className="btn btn-outline text-gray-700 text-center mt-4 font-bold">
                   Add Your Architecture</button>
               </div>
-            </Link> */}
+            </Link>
 
             <div>
               <EmailSubmit />
@@ -100,6 +103,17 @@ function App() {
             <InteriorsDetail />
           </Route>
 
+          <Route exact path="/architecture">
+            <ArchitectureList />
+          </Route>
+
+          <Route exact path="/architecture/new">
+            <ArchitecturePost />
+          </Route>
+
+          <Route exact path="/architecture/:id">
+            <ArchitectureDetail />
+          </Route>
         </Switch>
       </div>
     </div >
