@@ -22,35 +22,38 @@ export default function DropDownMenu() {
       <button onClick={() => {
         setToggleMenu(prevState => !prevState)
       }}
-        className="text-medium-orange text-3xl lg:text-4xl"><VscThreeBars /></button>
+        className="text-medium-orange text-3xl lg:text-4xl"><VscThreeBars />
+      </button>
+
       <div className={`dropdown ${open}`}>
         <button onClick={() => {
           closeMenu()
         }}
-          className="text-gray-700 text-2xl text-center"><VscChevronUp /></button>
+          className="text-gray-700 text-2xl text-center"><VscChevronUp />
+        </button>
         <Link
           onClick={() => {
             closeMenu()
           }}
-          className="hover:text-yellow-50"
+          className="hover:text-medium-orange"
           to="/art">Art</Link>
         <Link
           onClick={() => {
             closeMenu()
           }}
-          className="hover:text-yellow-50"
+          className="hover:text-medium-orange"
           to="/fashion">Fashion</Link>
         <Link
           onClick={() => {
             closeMenu()
           }}
-          className="hover:text-yellow-50"
+          className="hover:text-medium-orange"
           to="/interiors">Interiors</Link>
         <Link
           onClick={() => {
             closeMenu()
           }}
-          className="hover:text-yellow-50"
+          className="hover:text-medium-orange"
           to="/architecture">Architecture</Link>
       </div >
     </>
