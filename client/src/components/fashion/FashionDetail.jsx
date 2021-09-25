@@ -41,20 +41,35 @@ export default function FashionDetail() {
   }
 
   return (
-    <div className="leading-loose text-gray-700">
-      <Link to={'/fashion'}>
-        <div className="flex flex-row justify-center">
+    <div className="flex flex-col">
+      <div className="flex flex-row justify-center">
+        <Link to={'/fashion'}>
           <img className="w-screen md:max-w-4xl md:self-center lg:mt-16" src={fashion.fields?.image} alt="piece of fashion" />
+        </Link>
+      </div>
+
+      <div className="flex flex-row justify-center bg-soft-orange m-6 rounded-lg w-screen md:w-1/2">
+        <div className="grid grid-cols-2 gap-x-12 m-6 p-4 text-gray-700">
+          <h3 className="text-xl text-right font-semibold">Designer</h3>
+          <h4 className="mt-4 text-lg text-left font-light">{fashion.fields?.designer}</h4>
+          <h3 className="mt-4 text-xl text-right font-semibold">Website</h3>
+          <a className="mt-4 text-lg text-left font-light"
+            href={fashion.fields?.website} target="_blank" rel="noreferrer">
+            Link to site
+          </a>
+          <DeleteFashion id={id} className="justify-center" />
+        </div>
+      </div>
+
+      <Link to='/fashion'>
+        <div className="flex justify-end">
+          <button className="btn btn-outline btn-circle m-4">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
         </div>
       </Link>
-      <div className="grid grid-cols-2 gap-x-12 m-2">
-        <h3 className="mt-6 text-xl text-right font-semibold">Designer</h3>
-        <h4 className="mt-6 text-lg text-left font-light">{fashion.fields?.designer}</h4>
-        <h3 className="mt-4 text-xl text-right font-semibold">Website</h3>
-        <a href={fashion.fields?.website} target="_blank" rel="noreferrer" className="mt-4 text-lg text-left font-light">Link to site</a>
-      </div>
-      <Link to={`/fashion/${id}/`}></Link>
-      <DeleteFashion id={id} />
     </div>
   )
 }

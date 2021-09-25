@@ -43,13 +43,17 @@ export default function ArtList() {
                 <img className="w-60 mt-8 rounded-3xl border-4 border-medium-orange"
                   src={pieces.fields.image} alt="artwork thumbnail" />
               </Link>
+
               <Link to={`/art/${pieces.id}`}>
-                <button className="font-medium text-gray-700 text-lg border-2 border-soft-yellow rounded-lg px-2 m-2 mt-3 w-xl hover:bg-soft-yellow">{pieces.fields.title}</button>
+                <button className="font-medium text-gray-700 text-lg border-2 border-soft-yellow rounded-lg px-2 m-2 mt-3 w-xl hover:bg-soft-yellow">
+                  {pieces.fields.title}
+                </button>
               </Link>
             </div>
           );
         })}
       </div>
+
       <Link to='/art/new'>
         <div className="flex justify-center text-gray-700 text-center mt-6 font-bold">
           <button className="btn btn-outline mb-4">
