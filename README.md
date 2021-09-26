@@ -47,7 +47,7 @@ My project 2 MVPs are:
 - Make an API in Airtable
 - Employ an axios get, axios post, and axios delete request via Airtable
 - Design mobile-first application, with media-query for desktop 
-- Use CSS library Tailwind CSS to style the project
+- Use CSS library TailwindCSS to style the project
 
 ### PostMVP  
 My project 2 PostMVPs are:
@@ -100,7 +100,7 @@ My project 2 PostMVPs are:
 Design Delights excels visually in its cohesive styling. I enjoyed the process of creating a color palette and meticulously following the same set of visual design cues, which I believe creates a better user experience. Furthermore, this project successfully employs axios calls for all but one of the CRUD functions.
 
 ### Weaknesses:
-I struggled using TailwindCSS to style this project. Namely, I had a hard time using their flex styling to arrange the content on the page as desired. Additionally, I have a lot of repetitive code between my four design category. I would like to revisit this project in the future and attempt to write DRY-er code.
+I struggled using TailwindCSS to style this project. Namely, I had a hard time using their flex styling to arrange the content on the page as desired. Additionally, I have a lot of repetitive code between my four design categories. I would like to revisit this project in the future and attempt to write DRY-er code.
 
 ### Opportunities:
 The layout for this project leaves room to expand, both in terms of the content on each page and the possible categories to add to. There is also the opportunity to refine my code with less repetition in the future.
