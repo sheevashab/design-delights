@@ -62,9 +62,9 @@ My project 2 PostMVPs are:
 |Sept 18| React application - code app.js layout (aka home page) / NavBar. Create framework for all supplemental jsx component files | Complete
 |Sept 19| React application - code e-mail submit form component and ArtList component | Complete
 |Sept 20| React application - code ArtPost form and delete button | Complete
-|Sept 21| Style application | Incomplete
-|Sept 22| Style application | Incomplete
-|Sept 23| Post MVPs / tie up any loose ends | Incomplete
+|Sept 21| Style application | Complete
+|Sept 22| Style application | Complete
+|Sept 23| Post MVPs / tie up any loose ends | Complete
 |Sept 24| Project Presentation | Incomplete
 
 ## Timeframes
@@ -74,32 +74,36 @@ My project 2 PostMVPs are:
 | Proposal - creating wireframes + component hierarchy on Whimsical | H | 2hrs| 3hrs | 3hrs |
 | Working with Airtable API | H | 1hrs| 1hrs | 1hrs |
 | Setting up deployment and README | H | 4hrs| 5hrs | 5hrs |
-| Code for App.js home page route layout / create jsx shell files for components | H | 2hrs| 1hrs | hrs |
-| Code NavBar component | H | 2hrs| .5hrs | hrs |
-| Code e-mail submit form component | H | 1hrs| 1hrs | hrs |
-| Code ArtList component (axios get request) | H | 2hrs| 1hrs | hrs |
-| Code ArtDetail component (axios get request) | H | 2hrs| 1hrs | hrs |
-| Code ArtPost component (axios post request) | H | 3hrs| 2.5hrs | hrs |
-| Code ArtDelete component (axios delete request) | H | 3hrs| 2hrs | hrs |
-| Debugging application | H | 3hrs| 1hrs | hrs |
-| Install TailwindCSS and research how to use | H | 3hrs| 2hrs | hrs |
-| Style home page for mobile (NavBar + EmailSubmit form) | H | 3hrs| 3.5hrs | hrs |
-| Style ArtList page for mobile | H | 3hrs| hrs | hrs |
-| Style ArtDetail page for mobile | H | 3hrs| hrs | hrs |
-| Style ArtPost form  | M | 3hrs| hrs | hrs |
-| Style buttons | M | 2hrs| hrs | hrs |
-| Implement and style media query | H | 3hrs| hrs | hrs |
-| Post MVP - Fashion Link (Airtable,List,Detail,Post,Delete) | L | 7hrs| hrs | hrs |
-| Post MVP - Interiors Link (Airtable,List,Detail,Post,Delete) | L | 7hrs| hrs | hrs |
-| Post MVP - Architecture Link (Airtable,List,Detail,Post,Delete) | L | 7hrs| hrs | hrs |
-| Total |  | 39hrs (!== PostMVPs| 24.5hrs | hrs |
+| Code for App.js home page route layout / create jsx shell files for components | H | 2hrs| 2hrs | 2hrs |
+| Code NavBar component | H | 2hrs| 2hrs | 2hrs |
+| Code e-mail submit form component | H | 1hrs| 1hrs | 1hrs |
+| Code ArtList component (axios get request) | H | 2hrs| 1.5hrs | 1.5hrs |
+| Code ArtDetail component (axios get request) | H | 2hrs| 1.5hrs | 1.5hrs |
+| Code ArtPost component (axios post request) | H | 3hrs| 3hrs | 3hrs |
+| Code ArtDelete component (axios delete request) | H | 3hrs| 2hrs | 2hrs |
+| Debugging application | H | 3hrs| 2.5hrs | 2.5hrs |
+| Install TailwindCSS and research how to use | H | 3hrs| 3hrs | 4hrs |
+| Style home page for mobile (NavBar + EmailSubmit form) | H | 3hrs| 5hrs | 5hrs |
+| Style ArtList page for mobile | H | 3hrs| 3hrs | 3hrs |
+| Style ArtDetail page for mobile | H | 3hrs| 4hrs | 4hrs |
+| Style ArtPost form  | M | 3hrs| 4hrs | 4hrs |
+| Style buttons | M | 2hrs| 3hrs | 3hrs |
+| Implement and style media query | H | 3hrs| 3hrs | 4hrs |
+| Post MVP - Fashion Link (Airtable,List,Detail,Post,Delete) | L | 7hrs| 5hrs | 5hrs |
+| Post MVP - Interiors Link (Airtable,List,Detail,Post,Delete) | L | 7hrs| 4hrs | 4hrs |
+| Post MVP - Architecture Link (Airtable,List,Detail,Post,Delete) | L | 7hrs| 4hrs | 4hrs |
+| Total |  | 45hrs (66hrs with PostMVPs)| 49.5hrs (62.5hrs with PMVP) | 51.5hrs (64.5hrs with PMVP) |
 
 ## SWOT Analysis
 
 ### Strengths:
+Design Delights excels visually in its cohesive styling. I enjoyed the process of creating a color palette and meticulously following the same set of visual design cues, which I believe creates a better user experience. Furthermore, this project successfully employs axios calls for all but one of the CRUD functions.
 
 ### Weaknesses:
+I struggled using TailwindCSS to style this project. Namely, I had a hard time using their flex styling to arrange the content on the page as desired. Additionally, I have a lot of repetitive code between my four design category. I would like to revisit this project in the future and attempt to write DRY-er code.
 
 ### Opportunities:
+The layout for this project leaves room to expand, both in terms of the content on each page and the possible categories to add to. There is also the opportunity to refine my code with less repetition in the future.
 
 ### Threats:
+One threat to the continuation of Design Delights is the potential variation in the contents's imagery. The difference in size (length vs width) made it difficult to figure out a singular style that would apply well to every image.

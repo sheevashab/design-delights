@@ -41,23 +41,25 @@ export default function FashionDetail() {
   }
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col justify-center justify-items-center justify-self-center">
       <div className="flex flex-row justify-center">
         <Link to={'/fashion'}>
           <img className="w-screen md:max-w-4xl md:self-center lg:mt-16" src={fashion.fields?.image} alt="piece of fashion" />
         </Link>
       </div>
 
-      <div className="flex flex-row justify-center bg-soft-orange m-6 rounded-lg w-screen md:w-1/2">
+      <div className="flex flex-col bg-soft-orange my-8 rounded-lg w-3/4 md:w-1/2">
         <div className="grid grid-cols-2 gap-x-12 m-6 p-4 text-gray-700">
           <h3 className="text-xl text-right font-semibold">Designer</h3>
-          <h4 className="mt-4 text-lg text-left font-light">{fashion.fields?.designer}</h4>
+          <h4 className="text-lg text-left font-light">{fashion.fields?.designer}</h4>
           <h3 className="mt-4 text-xl text-right font-semibold">Website</h3>
           <a className="mt-4 text-lg text-left font-light"
             href={fashion.fields?.website} target="_blank" rel="noreferrer">
             Link to site
           </a>
-          <DeleteFashion id={id} className="justify-center" />
+        </div>
+        <div>
+          <DeleteFashion id={id} className="flex flex-row justify-center" />
         </div>
       </div>
 
