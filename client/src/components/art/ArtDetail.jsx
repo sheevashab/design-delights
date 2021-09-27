@@ -3,6 +3,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
+import ArtDelete from "./ArtDelete"
 
 const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
 const airtableKey = process.env.REACT_APP_AIRTABLE_KEY;
@@ -64,9 +65,12 @@ export default function ArtDetail() {
           <h3 className="mt-4 text-xl text-left font-semibold md:pl-4">Medium</h3>
           <h4 className="mt-4 text-lg text-left font-light">{art.fields?.medium}</h4>
         </div>
+        <div className="flex flex-row justify-center pb-4">
+          <ArtDelete id={id} />
+        </div>
       </div>
 
-      <Link to={`/interiors/`}>
+      <Link to={`/art/`}>
         <div className="flex justify-end">
           <button className="btn btn-outline btn-circle m-4">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current">
