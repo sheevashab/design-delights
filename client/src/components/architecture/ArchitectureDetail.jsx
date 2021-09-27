@@ -51,15 +51,15 @@ export default function ArchitectureDetail() {
 
       <div className="bg-soft-orange place-self-center my-8 rounded-lg w-4/5 md:w-1/2">
         <div className="grid grid-cols-2 gap-x-12 m-6 p-4 text-gray-700">
-          <h3 className="text-xl text-left font-semibold md:pl-4">Title</h3>
+          <h3 className="text-xl text-left font-semibold lg:text-right">Title</h3>
           <h4 className="text-lg text-left font-light">{architecture.fields?.title}</h4>
-          <h3 className="mt-4 text-xl text-left font-semibold md:pl-4">Architect</h3>
+          <h3 className="mt-4 text-xl text-left font-semibold lg:text-right">Architect</h3>
           <h4 className="mt-4 text-lg text-left font-light">{architecture.fields?.architect}</h4>
-          <h3 className="mt-4 text-xl text-left font-semibold md:pl-4">Location</h3>
+          <h3 className="mt-4 text-xl text-left font-semibold lg:text-right">Location</h3>
           <h4 className="mt-4 text-lg text-left font-light">{architecture.fields?.location}</h4>
-          <h3 className="mt-4 text-xl text-left font-semibold md:pl-4">Style</h3>
+          <h3 className="mt-4 text-xl text-left font-semibold lg:text-right">Style</h3>
           <h4 className="mt-4 text-lg text-left font-light">{architecture.fields?.style}</h4>
-          <h3 className="mt-4 text-xl text-left font-semibold md:pl-4">Year</h3>
+          <h3 className="mt-4 text-xl text-left font-semibold lg:text-right">Year</h3>
           <h4 className="mt-4 text-lg text-left font-light">{architecture.fields?.year}</h4>
         </div>
         <div className="flex flex-row justify-center pb-4">

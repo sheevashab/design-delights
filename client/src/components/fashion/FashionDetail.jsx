@@ -51,9 +51,9 @@ export default function FashionDetail() {
 
       <div className="bg-soft-orange place-self-center my-8 rounded-lg w-4/5 md:w-1/2">
         <div className="grid grid-cols-2 gap-x-12 m-6 p-4 text-gray-700">
-          <h3 className="text-xl text-left font-semibold md:pl-4">Designer</h3>
+          <h3 className="text-xl text-left font-semibold lg:text-right">Designer</h3>
           <h4 className="text-lg text-left font-light">{fashion.fields?.designer}</h4>
-          <h3 className="mt-4 text-xl text-left font-semibold md:pl-4">Website</h3>
+          <h3 className="mt-4 text-xl text-left font-semibold lg:text-right">Website</h3>
           <a className="mt-4 text-lg text-left font-light"
             href={fashion.fields?.website} target="_blank" rel="noreferrer">
             Link to site
