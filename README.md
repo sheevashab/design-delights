@@ -1,8 +1,9 @@
 # Design Delights: Project Overview
+[Design Delights](https://brave-williams-1296d2.netlify.app/)
 
 ## Project Description
 
-Design Delights emulates an interactive design blog. I will use Airtable to make an API that will create the starting content on the blog, but users will be able to add and delete their own content as well once the site is deployed. The MVP for this project covers the "art" portion of the blog, but with post-MVP I would like to include fashion, interiors, and architecture as additional segments.
+[Design Delights](https://brave-williams-1296d2.netlify.app/) emulates an interactive design blog. I will use Airtable to make an API that will create the starting content on the blog, but users will be able to add and delete their own content as well once the site is deployed. The MVP for this project covers the "art" portion of the blog, but with post-MVP I would like to include fashion, interiors, and architecture as additional segments.
 
 ## Wireframes
 
