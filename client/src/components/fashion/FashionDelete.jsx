@@ -13,7 +13,7 @@ const config = {
   },
 };
 
-export default function DeleteFashion(props) {
+export default function FashionDelete(props) {
   const history = useHistory();
   const [showDelete, setShowDelete] = useState("block");
 
@@ -25,7 +25,7 @@ export default function DeleteFashion(props) {
 
   useEffect(() => {
     if (props.id === "rec9yc8CCR4g102aa" ||
-      props.id === "fashion/rech8FN14X1uEtjsl" ||
+      props.id === "rech8FN14X1uEtjsl" ||
       props.id === "recn6pLoiw7tBG0RF" ||
       props.id === "recwymybJVLfbRPli"
     ) {

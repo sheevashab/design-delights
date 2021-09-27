@@ -41,26 +41,42 @@ export default function ArchitectureDetail() {
   }
 
   return (
-    <div className="leading-loose text-gray-700">
-      <Link to={`/architecture`}>
-        <div className="flex flex-row justify-center">
-          <img className="w-screen md:max-w-4xl md:self-center lg:mt-16" src={architecture.fields?.image} alt="building" />
+    <div className="flex flex-col justify-center">
+      <div className="flex flex-row justify-center">
+        <Link to={`/architecture`}>
+          <img className="w-screen md:max-w-4xl md:self-center lg:mt-16" src={architecture.fields?.image}
+            alt="interior design piece" />
+        </Link>
+      </div>
+
+      <div className="bg-soft-orange place-self-center my-8 rounded-lg w-4/5 md:w-1/2">
+        <div className="grid grid-cols-2 gap-x-12 m-6 p-4 text-gray-700">
+          <h3 className="text-xl text-left font-semibold md:pl-4">Title</h3>
+          <h4 className="text-lg text-left font-light">{architecture.fields?.title}</h4>
+          <h3 className="mt-4 text-xl text-left font-semibold md:pl-4">Architect</h3>
+          <h4 className="mt-4 text-lg text-left font-light">{architecture.fields?.architect}</h4>
+          <h3 className="mt-4 text-xl text-left font-semibold md:pl-4">Location</h3>
+          <h4 className="mt-4 text-lg text-left font-light">{architecture.fields?.location}</h4>
+          <h3 className="mt-4 text-xl text-left font-semibold md:pl-4">Style</h3>
+          <h4 className="mt-4 text-lg text-left font-light">{architecture.fields?.style}</h4>
+          <h3 className="mt-4 text-xl text-left font-semibold md:pl-4">Year</h3>
+          <h4 className="mt-4 text-lg text-left font-light">{architecture.fields?.year}</h4>
+        </div>
+        <div className="flex flex-row justify-center pb-4">
+          <ArchitectureDelete id={id} />
+        </div>
+      </div>
+
+
+      <Link to={`/architecture/`}>
+        <div className="flex justify-end">
+          <button className="btn btn-outline btn-circle m-4">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
         </div>
       </Link>
-      <div className="grid grid-cols-2 gap-x-12 m-2">
-        <h3 className="mt-6 text-xl text-right font-semibold">Title</h3>
-        <h4 className="mt-6 text-lg text-left font-light">{architecture.fields?.title}</h4>
-        <h3 className="mt-4 text-xl text-right font-semibold">Architect</h3>
-        <h4 className="mt-4 text-lg text-left font-light">{architecture.fields?.architect}</h4>
-        <h3 className="mt-4 text-xl text-right font-semibold">Location</h3>
-        <h4 className="mt-4 text-lg text-left font-light">{architecture.fields?.location}</h4>
-        <h3 className="mt-4 text-xl text-right font-semibold">Style</h3>
-        <h4 className="mt-4 text-lg text-left font-light">{architecture.fields?.style}</h4>
-        <h3 className="mt-4 text-xl text-right font-semibold">Year</h3>
-        <h4 className="mt-4 text-lg text-left font-light">{architecture.fields?.year}</h4>
-      </div>
-      <Link to={`/architecture/${id}/`}></Link>
-      <ArchitectureDelete id={id} />
     </div>
   )
 }

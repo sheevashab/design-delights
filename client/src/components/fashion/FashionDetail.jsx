@@ -1,6 +1,6 @@
 import axios from "axios";
 import React from "react";
-import DeleteFashion from "./FashionDelete"
+import FashionDelete from "./FashionDelete"
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
@@ -41,25 +41,26 @@ export default function FashionDetail() {
   }
 
   return (
-    <div className="flex flex-col justify-center justify-items-center justify-self-center">
+    <div className="flex flex-col justify-center">
       <div className="flex flex-row justify-center">
         <Link to={'/fashion'}>
-          <img className="w-screen md:max-w-4xl md:self-center lg:mt-16" src={fashion.fields?.image} alt="piece of fashion" />
+          <img className="w-screen md:max-w-4xl md:self-center lg:mt-16"
+            src={fashion.fields?.image} alt="piece of fashion" />
         </Link>
       </div>
 
-      <div className="flex flex-col bg-soft-orange my-8 rounded-lg w-3/4 md:w-1/2">
+      <div className="bg-soft-orange place-self-center my-8 rounded-lg w-4/5 md:w-1/2">
         <div className="grid grid-cols-2 gap-x-12 m-6 p-4 text-gray-700">
-          <h3 className="text-xl text-right font-semibold">Designer</h3>
+          <h3 className="text-xl text-left font-semibold md:pl-4">Designer</h3>
           <h4 className="text-lg text-left font-light">{fashion.fields?.designer}</h4>
-          <h3 className="mt-4 text-xl text-right font-semibold">Website</h3>
+          <h3 className="mt-4 text-xl text-left font-semibold md:pl-4">Website</h3>
           <a className="mt-4 text-lg text-left font-light"
             href={fashion.fields?.website} target="_blank" rel="noreferrer">
             Link to site
           </a>
         </div>
-        <div>
-          <DeleteFashion id={id} className="flex flex-row justify-center" />
+        <div className="flex flex-row justify-center pb-4">
+          <FashionDelete id={id} />
         </div>
       </div>
 
