@@ -65,7 +65,7 @@ My project 2 PostMVPs are:
 |Sept 21| Style application | Complete
 |Sept 22| Style application | Complete
 |Sept 23| Post MVPs / tie up any loose ends | Complete
-|Sept 24| Project Presentation | Incomplete
+|Sept 24| Project Presentation | Complete
 
 ## Timeframes
 
